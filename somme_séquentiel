@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <time.h>
+
+#define n 18
+int main(void){
+	
+	clock_t debut = clock();
+	int tab[n] = {1,2,3,4,5,6,7,7,5,4,3,4,3,9,7,8,6};
+	int sum=0;
+	int val;
+	int i;
+	
+	for(i=0;i<n;i++){
+		val = tab[i];
+		sum += val;
+		
+}
+	printf("la somme est : %d\n", sum);
+	clock_t fin = clock();
+	unsigned long sec = (unsigned long) (fin - debut);
+printf("la duree de l'excution est de %ld \n ", sec);
+
+
+} 
+
